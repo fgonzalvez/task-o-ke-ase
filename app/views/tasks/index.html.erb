@@ -1,0 +1,17 @@
+<div id="content">
+  <img src="/images/logo.png"/>
+
+<a class="button-new-task" href="/tasks/new"> New Task </a>
+ 
+<% @tasks.each do |task| %>
+  <div class="task">
+    <p class="p-title"><%= link_to task.title, task_path(task) %></p>
+    <p class="p-description"><%= task.text %></p> 
+    <a class="button-edit" href=<%=edit_task_path(task.id) %>></a>
+    <p class="did-it"><%= link_to 'Did it!', task_path(task), method: :delete, data: {confirm: 'Are you sure o no ase?'} %></p>
+  </div>
+<% end %>
+</table>
+
+
+</div>
