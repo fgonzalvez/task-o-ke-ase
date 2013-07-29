@@ -1,13 +1,19 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.12'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
+gem 'heroku'
 
-# gem 'sqlite3', '~> 1.3.7'
-
-
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
+group :production do
+  gem 'thin'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
