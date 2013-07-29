@@ -4,6 +4,8 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 gem 'heroku'
+gem 'rails', '3.1.12'
+
 
 group :development, :test do
   gem 'sqlite3'
