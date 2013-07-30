@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 gem 'heroku'
 gem 'rails', '3.1.12'
-gem 'sqlite3'
+#gem 'sqlite3'
 gem 'taps'
 #gem 'pg'
 
