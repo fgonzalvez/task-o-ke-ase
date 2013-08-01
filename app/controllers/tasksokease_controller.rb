@@ -1,4 +1,4 @@
-require 'tasksokease.rb'
+
 
 class TasksokeaseController < ApplicationController
   def index
